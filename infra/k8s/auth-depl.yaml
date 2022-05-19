@@ -22,11 +22,10 @@ metadata:
   name: auth-srv
 spec:
   selector:
-    labels:
-      app: auth
-    ports:
-      -name: auth
-        protocol: TCP
-        port: 3000
-        targetPort: 3000
+    app: auth
+  ports:
+    - name: auth
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
     
