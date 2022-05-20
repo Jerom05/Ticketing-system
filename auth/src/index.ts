@@ -2,7 +2,7 @@ import express from 'express'
 const app = express()
 
 app.get('/api/users/currentuser', (req, res) => {
-  res.send('Hi there!');
+  res.send('current user!');
 });
 
 app.listen(3000, () => {
